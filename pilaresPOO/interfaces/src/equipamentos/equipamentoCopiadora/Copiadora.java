@@ -1,3 +1,5 @@
 package interfaces.src.equipamentos.equipamentoCopiadora;
 
-public interface Copiadora {}
+public interface Copiadora {
+    void copiar();
+}

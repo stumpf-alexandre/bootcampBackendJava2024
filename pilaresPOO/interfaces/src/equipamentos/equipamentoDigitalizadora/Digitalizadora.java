@@ -1,3 +1,5 @@
 package interfaces.src.equipamentos.equipamentoDigitalizadora;
 
-public interface Digitalizadora {}
+public interface Digitalizadora {
+    void digitalizar();
+}

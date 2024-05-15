@@ -13,13 +13,13 @@ public class Fabrica {
     public static void main(String[] args) {
         Multifuncional multi = new Multifuncional();
 
-        //Impressora impressora = multi;
-        //Digitalizadora digitalizadora = multi;
-        //Copiadora copiadora = multi;
+        Impressora impressora = multi;
+        Digitalizadora digitalizadora = multi;
+        Copiadora copiadora = multi;
 
-        //impressora.imprimir();
-        //digitalizadora.digitalizar();
-        //copiadora.copiar();
+        impressora.imprimir();
+        digitalizadora.digitalizar();
+        copiadora.copiar();
         multi.imprimir();
         multi.digitalizar();
         multi.copiar();
