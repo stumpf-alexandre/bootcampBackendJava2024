@@ -1,4 +1,4 @@
-package collectionsFrameworksApi.generico;
+package generico;
 
 import java.util.ArrayList;
 import java.util.List;

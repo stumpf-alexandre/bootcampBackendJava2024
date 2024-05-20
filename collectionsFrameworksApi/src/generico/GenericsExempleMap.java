@@ -1,4 +1,4 @@
-package collectionsFrameworksApi.generico;
+package generico;
 
 import java.util.HashMap;
 import java.util.Map;
