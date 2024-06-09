@@ -1,8 +1,17 @@
 public abstract class Conta {
     //atributo
+    private static final int AGENCIA_PADRAO = 1;
+    private static int SEQUENCIAL = 1;
+
     private int agencia;
     private int conta;
     private double saldo;
+
+    //constructor
+    public Conta() {
+        this.agencia = Conta.AGENCIA_PADRAO;
+        this.conta = SEQUENCIAL++;
+    }
 
     //metodos
     public void sacar() {
