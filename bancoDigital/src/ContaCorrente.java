@@ -1,7 +1,7 @@
 public class ContaCorrente extends Conta {
     //constructor
-    public ContaCorrente(Cliente cliente) {
-        super(cliente);
+    public ContaCorrente(Cliente cliente, Banco banco) {
+        super(cliente, banco);
     }
 
     //metodo

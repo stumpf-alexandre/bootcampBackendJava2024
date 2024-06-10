@@ -8,12 +8,14 @@ public abstract class Conta implements IConta {
     protected int conta;
     protected double saldo;
     protected Cliente cliente;
+    protected Banco banco;
 
     //constructor
-    public Conta(Cliente cliente) {
+    public Conta(Cliente cliente, Banco banco) {
         this.agencia = Conta.AGENCIA_PADRAO;
         this.conta = SEQUENCIAL++;
         this.cliente = cliente;
+        this.banco = banco;
     }
 
     //metodos
@@ -62,6 +64,7 @@ public abstract class Conta implements IConta {
     }
 
     protected void imprimirInfosComuns() {
+        System.out.println(String.format("Banco: %s", this.banco.getNome()));
         System.out.println(String.format("Titular: %s", this.cliente.getNome()));
         System.out.println(String.format("Agencia: %d", this.agencia));
         System.out.println(String.format("Conta: %d", this.conta));
@@ -74,5 +77,11 @@ public abstract class Conta implements IConta {
 
     private void erroTransacao() {
         System.out.println("Saldo insuficiente");
+    }
+
+    //toString
+    @Override
+    public String toString() {
+        return "Conta [agencia=" + agencia + ", conta=" + conta + ", cliente=" + cliente.getNome() + ", banco=" + banco.getNome() + "]";
     }
 }

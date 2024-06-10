@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Cliente cliente1 = new Cliente();
-        cliente1.setNome("Alexandre");
-        Conta cc = new ContaCorrente(cliente1);
-        Conta poupanca = new ContaPoupanca(cliente1);
+        Cliente cliente1 = new Cliente("Alexandre");
+        Banco banco1 = new Banco("Santander");
+        Conta cc = new ContaCorrente(cliente1, banco1);
+        Conta poupanca = new ContaPoupanca(cliente1, banco1);
 
         cc.sacar(100);
         cc.imprimirExtrato();
@@ -23,5 +23,7 @@ public class Main {
         poupanca.transferir(100, cc);
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
+        banco1.exibirContas();
+        banco1.exibirClientes();
     }
 }
