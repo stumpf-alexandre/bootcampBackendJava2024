@@ -2,7 +2,11 @@ import dio.gof.facade.Facade;
 import dio.gof.singleton.SingletonEagle;
 import dio.gof.singleton.SingletonLazy;
 import dio.gof.singleton.SingletonLazyHolder;
-import dio.gof.strategy.*;
+import dio.gof.strategy.Comportamento;
+import dio.gof.strategy.ComportamentoAgressivo;
+import dio.gof.strategy.ComportamentoDefensivo;
+import dio.gof.strategy.ComportamentoNormal;
+import dio.gof.strategy.Robo;
 
 public class Test {
     public static void main(String[] args) throws Exception {
