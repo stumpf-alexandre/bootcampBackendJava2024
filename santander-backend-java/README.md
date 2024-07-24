@@ -1,0 +1,1 @@
+https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.3.2&packaging=jar&jvmVersion=17&groupId=dio&artifactId=santander-backend-java&name=santander-backend-java&description=Java%20RESTful%20API%20criada%20para%20o%20Santander%20backend%20java%202024&packageName=dio&dependencies=web,data-jpa,h2,postgresql
